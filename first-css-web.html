@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>My first web demo</title>
+    <style type="text/css">
+    @font-face {
+  font-family: 'iconfont';
+  src: url('http://at.alicdn.com/t/font_1473598224_3991845.eot'); /* IE9*/
+  src: url('http://at.alicdn.com/t/font_1473598224_3991845.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('http://at.alicdn.com/t/font_1473598224_3991845.woff') format('woff'), /* chrome、firefox */
+  url('http://at.alicdn.com/t/font_1473598224_3991845.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('http://at.alicdn.com/t/font_1473598224_3991845.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+                    
+.iconfont{font-family:"iconfont";
+font-size:16px;font-style:normal;}
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    img{
+        border:0;
+    }
+    ol, ul ,li{
+        list-style: none;
+    } 
+    body{
+        background-color: rgb(231, 231, 231);
+    }
+    h1{
+        font-size: 32px;
+        font-weight: 400;
+        text-align: center;
+        color: black;
+        text-shadow: 1px 1px 1px rgba(255, 255, 255, .9);
+        padding:20px;
+    }
+    h1 span{
+        display:block;
+        font-size: 16px;
+        text-align: center;
+    }
+    .content .example{
+        margin:0 auto;
+        height: 55px;
+        width: 300px;
+        font-size: 12px;
+    }
+    .content .example ul li{
+        display: block;
+        float: left;
+        margin-left:10px;
+    }
+    .content .example ul li a{
+        background-color: silver;
+    }
+    .menu{
+        margin: 0 auto;
+        width:400px;
+        
+    }
+    
+    .menu li{
+        width:400px;
+        height:100px;
+        background-color: white;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+        position:relative;
+        border-left: 10px solid black;
+        margin-bottom: 3px;
+
+    }
+    .menu li:hover{
+        border-color: yellow;
+        background-color: black;
+    }
+    .menu li a span{
+    line-height: 100px;
+    left:30px;
+    position: absolute;
+    transition: all 300ms linear;
+    }
+    .menu li a span i{
+        font-size: 20px;
+        color: black;
+        transition: all 300ms linear;
+    }
+    .menu li:hover a span i{
+        font-size: 60px;
+        color: yellow;
+    }
+    .menu li:hover a span{
+        left: 10px;
+    }
+    .menu li a div{
+        left: 80px;
+        top: 20px;
+        width:320px;
+        position: absolute;
+    }
+    .menu li a div .first{
+        font-size: 30px;
+        transition: all 300ms linear;
+        color: black;
+    }
+    .menu li:hover a div .first{
+         font-size: 15px;
+         color: yellow;
+    }
+    .menu li a div .second{
+        font-size: 15px;
+        transition: all 300ms linear;
+        color: black;
+        margin-top: 20px;
+    }
+    .menu li:hover a div .second{
+        font-size: 23px;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+        <h1>Creative Css3 Animation Menus
+            <span>Experimenting with Css3 Transitions & Animations</span>
+        </h1>
+        <div class="content">
+            <div class="example">
+                <ul>
+                    <li><a href="#">example</a></li>
+                    <li><a href="#">example</a></li>
+                    <li><a href="#">example</a></li>
+                    <li><a href="#">example</a></li>
+                    <li><a href="#">example</a></li>
+                    <li><a href="#">example</a></li>
+                    <li><a href="#">example</a></li>
+                    <li><a href="#">example</a></li>
+                    <li><a href="#">example</a></li>
+                    <li><a href="#">example</a></li>
+                </ul>
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="#">
+                        <span><i class="iconfont">&#xe602;</i></span>
+                        <div>
+                            <h2 class="first">Exceptional Service</h2>
+                            <h2 class="second">Personalized to your needs</h2>                            
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span><i class="iconfont">&#xe601;</i></span>
+                        <div>
+                            <h2 class="first">Exceptional Service</h2>
+                            <h2 class="second">Personalized to your needs</h2>                            
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span><i class="iconfont">&#xe600;</i></span>
+                        <div>
+                            <h2 class="first">Exceptional Service</h2>
+                            <h2 class="second">Personalized to your needs</h2>                            
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span><i class="iconfont">&#xe603;</i></span>
+                        <div>
+                            <h2 class="first">Exceptional Service</h2>
+                            <h2 class="second">Personalized to your needs</h2>                            
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+</body>
+</html>
